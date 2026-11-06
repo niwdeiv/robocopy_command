@@ -1,11 +1,6 @@
 # robocopy_command
 
-ROBOCOPY "x:\source\ (or \\source)" "x:\destination\ (or \\destination)" ^
-    /MIR /COPYALL /MT:8 /DCOPY:DAT ^
-    /XF ~* *.TMP ^
-    /XD DFSRPrivate __DFSR_DIAGNOSTICS_TEST_FOLDER__ ^
-    /R:1 /W:5 ^
-    /LOG:C:\robocopy.log
+ROBOCOPY "x:\source\ (or \\source)" "x:\destination\ (or \\destination)" /MIR /COPYALL /MT:8 /DCOPY:DAT /XF ~* *.TMP /XD DFSRPrivate __DFSR_DIAGNOSTICS_TEST_FOLDER__ /R:1 /W:5 /LOG:C:\robocopy.log
 
 
 
