@@ -28,5 +28,3 @@ ROBOCOPY "x:\source\ (or \\source)" "x:\destination\ (or \\destination)" /MIR /C
 | `/W:5` | Waits 5 seconds between retries. |
 | `/LOG:C:\robocopy.log` | Writes results to the specified log file. |
 
-**Important:** If the source is authoritative and the goal is an exact mirror, reconsider `/XO`. 
-** It can prevent newer destination files from being overwritten by older source files.
