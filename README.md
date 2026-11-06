@@ -24,7 +24,6 @@ ROBOCOPY "x:\source\ (or \\source)" "x:\destination\ (or \\destination)" /MIR /C
 | `/DCOPY:DAT` | Preserves directory data, attributes, and timestamps. |
 | `/XF ~* *.TMP` | Excludes files matching these patterns. |
 | `/XD DFSRPrivate __DFSR_DIAGNOSTICS_TEST_FOLDER__` | Excludes specified directories. |
-| `/XO` | Skips source files older than destination copies. |
 | `/R:1` | Retries failed copies once. |
 | `/W:5` | Waits 5 seconds between retries. |
 | `/LOG:C:\robocopy.log` | Writes results to the specified log file. |
