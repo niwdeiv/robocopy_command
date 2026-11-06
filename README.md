@@ -8,7 +8,6 @@ ROBOCOPY "x:\source\ (or \\source)" "x:\destination\ (or \\destination)" /MIR /C
 
 ### Things to consider before running
 - **`/MIR` is destructive:** Deletes files/folders in the destination that don't exist in the source. Verify source and destination paths carefully.
-- **`/XO` behavior:** Skips older source files if newer destination copies exist. May leave destination files that differ from the source.
 - **Permissions:** `/COPYALL` preserves NTFS permissions, ownership, and auditing. Ensure the account has sufficient privileges.
 - **DFSR exclusions:** Confirm excluding `DFSRPrivate` and `__DFSR_DIAGNOSTICS_TEST_FOLDER__` is intentional.
 - **Open files:** Files actively in use may fail to copy. Consider a maintenance window or final synchronization.
